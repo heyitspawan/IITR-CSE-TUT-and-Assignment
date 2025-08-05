@@ -1,0 +1,11 @@
+{
+  "name": "Sorting Evaluation Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "sudo apt update && sudo apt install -y gnuplot",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": []
+}
