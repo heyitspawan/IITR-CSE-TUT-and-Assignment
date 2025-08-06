@@ -20,7 +20,11 @@ This project benchmarks six sorting algorithms using random test data.
 
 ## How to Use
 
-### 1. Compile & Run All Algorithms
+### 1. Compile All Algorithms
+```bash
+make all
+```
+### 2. Run All A lgorithms
 ```bash
 make run ARGS=10000
 ```
@@ -29,19 +33,19 @@ This will:
 - Run each of them 5 times
 - Collect time and memory usage using `/usr/bin/time`
 
-### 2. Process Results
+### 3. Process Results
 ```bash
 bash process_data.sh
 ```
 This will generate `results/avg.csv` with averaged time and memory usage.
 
-### 3. Plot Results
+### 4. Plot Results
 ```bash
 gnuplot plot.gnuplot
 ```
 This will generate `plots/performance.png`.
 
-### 4. Clean Project
+### 5. Clean Project
 ```bash
 make clean
 ```
