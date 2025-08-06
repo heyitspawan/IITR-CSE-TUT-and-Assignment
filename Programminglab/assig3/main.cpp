@@ -118,10 +118,11 @@ int main(int argc, char* argv[]) {
     int n = atoi(argv[1]);
     vector<int> arr;
     generateRandomVector(arr, n);
-    for(int i=0 ;i<n;i++){
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
+    // for loop use to display the random data to sort 
+    // for(int i=0 ;i<n;i++){
+    //     cout<<arr[i]<<" ";
+    // }
+    // cout<<endl;
 
     #if ALGO == MERGE
         mergeSort(arr, 0, n - 1);
@@ -136,10 +137,11 @@ int main(int argc, char* argv[]) {
     #elif ALGO == SELECTION
         selectionSort(arr);
     #endif
-    cout<<endl<<"BY DEFAULT USED MERGE SORT ALGO "<<endl;
-    for(int i=0 ;i<n;i++){
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
+    // to display the sorted data after sorting 
+    // cout<<endl<<"BY DEFAULT USED MERGE SORT ALGO "<<endl;
+    // for(int i=0 ;i<n;i++){
+    //     cout<<arr[i]<<" ";
+    // }
+    // cout<<endl;
     return 0;
 }
