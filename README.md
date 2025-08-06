@@ -35,7 +35,7 @@ This will:
 
 ### 3. Process Results
 ```bash
-bash process_data.sh
+./process_data.sh
 ```
 This will generate `results/avg.csv` with averaged time and memory usage.
 
